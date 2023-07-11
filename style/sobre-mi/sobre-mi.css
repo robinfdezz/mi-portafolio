@@ -1,11 +1,53 @@
-.sobremi_contenedor{
+#sobre-mi{
     background-color: #2A7AE4;
+    padding: 20px 0 40px 0;
+    width: 100%;
 }
 
 .sobremi_titulo{
     font-size: 2rem;
     font-weight: 600;
     padding-left: 20px;
-    padding-top: 20px;
     color: rgb(255, 255, 255);
+    text-transform: uppercase; 
+}
+
+.sobremi_descripcion{
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/*! Para hacerlo responsive */
+/* Estilos para tablet (de 601px a 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .sobremi_titulo{
+        font-size: 2rem;
+        padding-left: 40px;
+    }
+
+    .sobremi_descripcion{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* Estilos para PC (a partir de 1025px) */
+@media screen and (min-width: 1025px) {
+    .sobremi_contenedor{
+        width: 60%;
+        margin-left: 100px;
+    }
+    .sobremi_titulo{
+        font-size: 2rem;
+        padding-left: 0px;
+    }
+
+    .sobremi_descripcion{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
