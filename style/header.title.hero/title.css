@@ -1,8 +1,8 @@
-.title{
+.title {
     padding-bottom: 30px;
 }
 
-.title-div{
+.title-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,19 +11,19 @@
     margin-top: 30px;
 }
 
-.title-contenedor{
+.title-contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title_contenedor--yo{
+.title_contenedor--yo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title_img{
+/* .title_img {
     justify-content: center;
     width: 200px;
     border-radius: 50%;
@@ -31,53 +31,90 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+} */
+
+.contenedor-imagen {
+    width: 300px;
+    height: 300px;
+    background-image: url("../../recursos/imagenes-iconos/Mi-foto-2.png");
+    background-size: cover;
+    transition: background-image 0.3s ease;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: palpitacion 6s infinite;
+    -webkit-animation: palpitacion 6s infinite;
 }
 
-.title_saludo{
+.contenedor-imagen:hover {
+    background-image: url("../../recursos/imagenes-iconos/Mi-foto-2-cambio.png");
+    animation: none;
+    -webkit-animation: none;
+}
+
+
+.title_saludo {
     color: #464646;
     margin-bottom: 10px;
 }
 
-.title_quien-soy{
+.title_quien-soy {
     color: #464646;
     font-weight: 200;
 }
 
-.title_redes{
+.title_redes {
     width: 100%;
     display: flex;
     padding: 0;
     justify-content: space-around;
 }
 
-.title_redes-sociales{
+.title_redes-sociales {
     display: flex;
     list-style: none;
     align-items: center;
 }
 
-.title_redes-sociales > a{
+.title_redes-sociales>a {
     text-decoration: none;
     color: #464646;
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
 }
 
-.title_redes-sociales > a > img{
+.title_redes-sociales>a:hover {
+    text-decoration: underline;
+    color: #2A7AE4;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.title_redes-sociales>a>img {
     width: 13px;
     padding-left: 5px;
 }
 
-.title_cv{
+.title_cv {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.title_descargar-cv{
+.title_descargar-cv {
     display: flex;
     text-decoration: none;
     font-weight: 800;
@@ -92,82 +129,119 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
 }
 
-.title_descargar-cv > img{
+.title_descargar-cv:hover {
+    background-color: #0a4ea7;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.title_descargar-cv>img {
     width: 20px;
     padding-left: 10px;
 }
 
 /*! Para hacerlo responsive */
 /* Estilos para teléfono (hasta 600px) */
-@media screen and (max-width: 600px) {
-}
+@media screen and (max-width: 600px) {}
 
 /* Estilos para tablet (de 601px a 1024px) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .title-div{
+    .title-div {
         flex-direction: row;
         align-items: center;
     }
 
-    .title-contenedor{
-        order: 1;
+    .title-contenedor {
+        order: -1;
         width: 70%;
     }
 
-    .title_img{
+    .contenedor-imagen {
         order: 2;
+        margin: 0 0 0 1%;
+        width: 250px;
+        height: 250px;
     }
 
-    .title_img{
+    /* 
+    .title_img {
         width: 250px;
         margin: 0 0 0 4%;
-    }
-    
+    } */
+
 }
 
 /* Estilos para PC (a partir de 1025px) */
 @media screen and (min-width: 1025px) {
-    .title-div{
+    .title-div {
         flex-direction: row;
         align-items: center;
         width: 86%;
-    margin: 0 7%;
+        margin: 0 7%;
     }
 
-    .title-contenedor{
+    .title-contenedor {
         order: 1;
         width: 70%;
     }
 
-    .title_contenedor--yo{
+    .title_contenedor--yo {
         align-items: start;
     }
 
-    .title_img{
+    .contenedor-imagen {
         order: 2;
-    }
-
-    .title_img{
-        width: 300px;
         margin: 0 0 0 4%;
     }
 
-    .title_saludo{
+    /* .title_img {
+        order: 2;
+    } */
+
+    /* .title_img {
+        width: 300px;
+        margin: 0 0 0 4%;
+    } */
+
+    .title_saludo {
         font-weight: 800;
         font-size: 2.5rem;
     }
 
-    .title_quien-soy{
+    .title_quien-soy {
         font-size: 1.5rem;
     }
 
-    .title_redes{
-        justify-content: start;
+    .title_redes {
+        justify-content: space-around;
     }
 
-    .title_redes-sociales{
+    .title_redes-sociales {
         padding-right: 60px;
+    }
+
+    .title_descargar-cv {
+        width: 30%;
+        height: 50px;
+    }
+}
+
+@keyframes palpitacion {
+    0% {
+    }
+    50% {
+        background-image: url("../../recursos/imagenes-iconos/Mi-foto-2-animacion.png");
+    }
+    100% {
     }
 }
