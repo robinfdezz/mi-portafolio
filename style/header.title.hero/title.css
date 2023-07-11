@@ -112,6 +112,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    position: relative;
 }
 
 .title_descargar-cv {
@@ -134,6 +135,8 @@
     -moz-transition: 0.3s ease;
     -ms-transition: 0.3s ease;
     -o-transition: 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .title_descargar-cv:hover {
@@ -143,6 +146,19 @@
     -moz-transition: 0.3s ease;
     -ms-transition: 0.3s ease;
     -o-transition: 0.3s ease;
+    position: relative;
+}
+
+.title_descargar-cv:hover::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 2px solid #0a4ea7;
+    border-radius: 15px;
+    z-index: -1;
 }
 
 .title_descargar-cv>img {

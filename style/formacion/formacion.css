@@ -4,12 +4,131 @@
     justify-content: center;
     flex-direction: column;
     background-color: #2A7AE4;
-    margin-bottom: 60px;
 }
 
 .formacion_titulo{
     font-size: 1.5rem;
     text-transform: uppercase; 
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.formacion_contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.formacion_item{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(255, 255, 255); */
+    width: 80%;
+    max-width: 350px;
+    height: 200px;
+    margin: 40px 0 0 0;
+}
+
+.formacion_item-primero{
+    margin: 0;
+}
+
+.formacion_imagen{
+    width: 100%;
+    height: 150px;
+}
+
+.formacion_imagen-alura{
+    background-color: #ffffff;
+    background-image: url("../../recursos/imagenes-iconos/alura_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px;
+}
+
+.formacion_imagen-universidad{
+    background-color: #ffffff;
+    background-image: url("../../recursos/imagenes-iconos/uasd.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90px;
+}
+
+.formacion_nombre{
+    margin: 10px 0 0 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.formacion_descripcion{
+    margin: 0;
+    color: #ffffff;
+    font-weight: 200;
+}
+
+/*! Para hacerlo responsive */
+/* Estilos para tablet (de 601px a 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .formacion_contenedor{
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .formacion_item{
+        max-width: 350px;
+        height: 330px;
+        margin: 0;
+    }
+
+    .formacion_descripcion{
+        font-size: 1.6rem;
+    }
+
+    .formacion_nombre{
+        margin: 10px 0 0 0;
+        color: #ffffff;
+        font-size: 1.7rem;
+    }
+
+    .formacion_imagen{
+        width: 100%;
+        height: 200px;
+    }
+
+    .formacion_item-segundo{
+        margin-left: 10px;
+    }
+}
+
+/* Estilos para PC (a partir de 1025px) */
+@media screen and (min-width: 1025px) {
+    .formacion_contenedor{
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .formacion_item{
+        max-width: 350px;
+        height: 300px;
+        margin: 0;
+    }
+
+    .formacion_descripcion{
+        font-size: 1.6rem;
+    }
+
+    .formacion_nombre{
+        margin: 10px 0 0 0;
+        font-size: 1.6rem;
+    }
+
+    .formacion_imagen{
+        width: 100%;
+        height: 250px;
+    }
 }
