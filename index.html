@@ -17,6 +17,9 @@
     <link href="./style/skills/barra-progreso.css" rel="stylesheet" />
     <link href="./style/hobbies/hobbies.css" rel="stylesheet" />
     <link href="./style/formacion/formacion.css" rel="stylesheet" />
+    <link href="./style/experiencia/experiencia.css" rel="stylesheet" />
+    <link href="./style/contacto/contacto.css" rel="stylesheet" />
+    <link href="./style/footer/footer.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -247,13 +250,89 @@
             <div class="formacion_item formacion_item-segundo">
                 <div class="formacion_imagen formacion_imagen-universidad"></div>
                 <h2 class="formacion_nombre">Licenciatura en informatica</h2>
-                <h3 class="formacion_descripcion">2020 - UASD</h3>
+                <h3 class="formacion_descripcion">2019 - UASD</h3>
             </div>
             <!-- <div class="formacion_item">
                 <div class="formacion_imagen"></div>
                 <h2 class="formacion_nombre"></h2>
                 <h3 class="formacion_descripcion"></h3>
             </div> -->
+        </div>
+    </section>
+
+    <!--? Sección sobre mi experiencia laboral -->
+    <section class="experiencia" id="experiencia">
+        <h3 class="experiencia_titulo">Experiencia profesional</h3>
+        <div class="experiencia_contenedor">
+            <div class="experiencia_item">
+                <div class="experienci_item-uno experienci_item-encriptador">
+                    <img class="experiencia_img" src="./recursos/imagenes-iconos/encriptadortext.png">
+                </div>
+                <div class="experienci_item-dos">
+                    <h2 class="experiencia_titulo">Encriptador de texto</h2>
+                    <h3 class="experiencia_descripcion">Challenge Oracle</h3>
+                    <div class="experiencia_botones">
+                        <a class="experiencia_boton-repositorio"
+                            href="https://github.com/robinfdezz/Challenge-Alura.github.io"
+                            target="_blank">Repositório</a>
+                        <a class="experiencia_boton-demo" href="https://robinfdezz.github.io/Challenge-Alura.github.io/"
+                            target="_blank">Ver demo</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="experiencia_item">
+                <div class="experienci_item-uno">
+                    <img class="experiencia_img" src="./recursos/imagenes-iconos/encriptadortext.png">
+                </div>
+                <div class="experienci_item-dos">
+                    <h2 class="experiencia_titulo">Encriptador de texto</h2>
+                    <h3 class="experiencia_descripcion">Challenge Oracle</h3>
+                    <div class="experiencia_botones">
+                        <a class="experiencia_boton-repositorio" href=""  target="_blank">Repositório</a>
+                        <a class="experiencia_boton-demo" href=""  target="_blank">Ver demo</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!--? Sección para el area de contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contacto_contenedor">
+            <div class="contacto_imagen-ilustrativa">
+                <img src="./recursos/imagenes-iconos/3d-casual-life-messages.png" class="contacto_ilustracion">
+            </div>
+            <div class="contacto_informaciones">
+                <h3 class="contacto_titulo">Contacto</h3>
+                <p class="contacto_texto-primero">¿Quieres contactarme?</p>
+                <p class="contacto_texto-segundo">Complete el siguiente formulario y me pondré en contacto con usted lo
+                    antes posible.</p>
+                <form class="contacto_formulario">
+                    <input class="contacto_input" type="text" id="nombre" name="nombre" required placeholder="Nombre" minlength="5" maxlength="30">
+                    <input class="contacto_input" type="email" id="email" name="email" required placeholder="E-mail" minlength="5" maxlength="30">
+                    <input class="contacto_input" type="text" id="asunto" name="asunto" required placeholder="Asunto" minlength="3" maxlength="30">
+                    <textarea class="contacto_text-area" id="mensaje" name="mensaje" required placeholder="Mensaje" minlength="10" maxlength="300"></textarea>
+                    <button class="contacto_boton" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--? Sección para el footer -->
+    <section class="footer" id="footer">
+        <div class="footer_contenedor">
+            <ul class="title_redes footer_red">
+                <li class="title_redes-sociales footer_redes"><a href="https://github.com/robinfdezz" target="_blank">Github <img
+                            src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
+                <li class="title_redes-sociales footer_redes"><a href="https://www.linkedin.com/in/robinzondeveloper/"
+                        target="_blank">Linkedin <img src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
+                <li class="title_redes-sociales footer_redes"><a href="https://www.instagram.com/robinfdezz/"
+                        target="_blank">Instagram <img src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
+            </ul>
+            <div class="footer_firma">
+                <h2 class="footer_desarrollador">Desarrollado por Robinzon M. G. F</h2>
+                <h3 class="footer_anho">2023</h3>
+            </div>
         </div>
     </section>
 </body>
