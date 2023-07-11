@@ -1,0 +1,173 @@
+.title{
+    padding-bottom: 30px;
+}
+
+.title-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94%;
+    margin: 0 3%;
+    margin-top: 30px;
+}
+
+.title-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_contenedor--yo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_img{
+    justify-content: center;
+    width: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.title_saludo{
+    color: #464646;
+    margin-bottom: 10px;
+}
+
+.title_quien-soy{
+    color: #464646;
+    font-weight: 200;
+}
+
+.title_redes{
+    width: 100%;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.title_redes-sociales{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.title_redes-sociales > a{
+    text-decoration: none;
+    color: #464646;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_redes-sociales > a > img{
+    width: 13px;
+    padding-left: 5px;
+}
+
+.title_cv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.title_descargar-cv{
+    display: flex;
+    text-decoration: none;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50px;
+    background-color: #2A7AE4;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.title_descargar-cv > img{
+    width: 20px;
+    padding-left: 10px;
+}
+
+/*! Para hacerlo responsive */
+/* Estilos para teléfono (hasta 600px) */
+@media screen and (max-width: 600px) {
+}
+
+/* Estilos para tablet (de 601px a 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .title-div{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .title-contenedor{
+        order: 1;
+        width: 70%;
+    }
+
+    .title_img{
+        order: 2;
+    }
+
+    .title_img{
+        width: 250px;
+        margin: 0 0 0 4%;
+    }
+    
+}
+
+/* Estilos para PC (a partir de 1025px) */
+@media screen and (min-width: 1025px) {
+    .title-div{
+        flex-direction: row;
+        align-items: center;
+        width: 86%;
+    margin: 0 7%;
+    }
+
+    .title-contenedor{
+        order: 1;
+        width: 70%;
+    }
+
+    .title_contenedor--yo{
+        align-items: start;
+    }
+
+    .title_img{
+        order: 2;
+    }
+
+    .title_img{
+        width: 250px;
+        margin: 0 0 0 4%;
+    }
+
+    .title_saludo{
+        font-weight: 800;
+        font-size: 2.5rem;
+    }
+
+    .title_quien-soy{
+        font-size: 1.5rem;
+    }
+
+    .title_redes{
+        justify-content: start;
+    }
+
+    .title_redes-sociales{
+        padding-right: 60px;
+    }
+}

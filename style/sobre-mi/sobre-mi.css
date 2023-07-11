@@ -1,0 +1,11 @@
+.sobremi_contenedor{
+    background-color: #2A7AE4;
+}
+
+.sobremi_titulo{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+}
