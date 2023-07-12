@@ -1,0 +1,25 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+/*? Para la parte de mi nombre */
+.menu_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+.menu_imagen {
+    width: 35px;
+}
+.menu_minombre {
+    margin: 0 0 0 4px;
+    color: #464646;
+    font-size: 1.5rem;
+}

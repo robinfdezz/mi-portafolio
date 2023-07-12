@@ -20,6 +20,7 @@
     <link href="./style/experiencia/experiencia.css" rel="stylesheet" />
     <link href="./style/contacto/contacto.css" rel="stylesheet" />
     <link href="./style/footer/footer.css" rel="stylesheet" />
+    <link href="./style/inputs/inputs_errores.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -49,7 +50,7 @@
             <div class="title-contenedor">
                 <div class="title_contenedor--yo">
                     <h2 class="title_saludo">Hola, mi nombre es Robinzon M. Gabino F. y soy desarrollador web</h2>
-                    <h3 class="title_quien-soy">Actualmente estudiante de una Licenciatura en Informativa, cursada en la
+                    <h3 class="title_quien-soy">Actualmente estudiante de una Licenciatura en Informatica, cursada en la
                         Universidad Autonoma de Santo Domingo.</h3>
                 </div>
                 <ul class="title_redes">
@@ -307,11 +308,26 @@
                 <p class="contacto_texto-primero">¿Quieres contactarme?</p>
                 <p class="contacto_texto-segundo">Complete el siguiente formulario y me pondré en contacto con usted lo
                     antes posible.</p>
-                <form class="contacto_formulario">
-                    <input class="contacto_input" type="text" id="nombre" name="nombre" required placeholder="Nombre" minlength="5" maxlength="30">
-                    <input class="contacto_input" type="email" id="email" name="email" required placeholder="E-mail" minlength="5" maxlength="30">
-                    <input class="contacto_input" type="text" id="asunto" name="asunto" required placeholder="Asunto" minlength="3" maxlength="30">
-                    <textarea class="contacto_text-area" id="mensaje" name="mensaje" required placeholder="Mensaje" minlength="10" maxlength="300"></textarea>
+                <form class="contacto_formulario" action="enviar.php" method="post">
+                    <div class="input-container">
+                        <input class="contacto_input contact_input-nombre" type="text" id="nombre" name="nombre"
+                            required placeholder="Nombre" minlength="5" maxlength="50" data-tipo="nombre">
+                        <label class="input-label" for="nombre">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input class="contacto_input contact_input-email" type="email" id="email" name="email" required
+                            placeholder="E-mail" minlength="5" maxlength="30" data-tipo="email">
+                        <label class="input-label" for="email">Correo</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input class="contacto_input contact_input-asunto" type="text" id="asunto" name="asunto"
+                            required placeholder="Asunto" minlength="3" maxlength="30" data-tipo="asunto">
+                        <label class="input-label" for="asunto">Asunto</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <textarea class="contacto_text-area  contact_input-mensaje" id="mensaje" name="mensaje" required placeholder="Mensaje" minlength="10" maxlength="300"></textarea>
                     <button class="contacto_boton" type="submit">Enviar</button>
                 </form>
             </div>
@@ -322,19 +338,20 @@
     <section class="footer" id="footer">
         <div class="footer_contenedor">
             <ul class="title_redes footer_red">
-                <li class="title_redes-sociales footer_redes"><a href="https://github.com/robinfdezz" target="_blank">Github <img
-                            src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
+                <li class="title_redes-sociales footer_redes"><a href="https://github.com/robinfdezz"
+                        target="_blank">Github <img src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
                 <li class="title_redes-sociales footer_redes"><a href="https://www.linkedin.com/in/robinzondeveloper/"
                         target="_blank">Linkedin <img src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
                 <li class="title_redes-sociales footer_redes"><a href="https://www.instagram.com/robinfdezz/"
                         target="_blank">Instagram <img src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
             </ul>
             <div class="footer_firma">
-                <h2 class="footer_desarrollador">Desarrollado por Robinzon M. G. F</h2>
+                <h2 class="footer_desarrollador"> &copy; Desarrollado por Robinzon M. G. F</h2>
                 <h3 class="footer_anho">2023</h3>
             </div>
         </div>
     </section>
+    <script src="./js/script.js" type="module"></script>
 </body>
 
 </html>
