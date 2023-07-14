@@ -7,3 +7,8 @@ inputs.forEach(input => {
         valida(input.target);
     })
 })
+
+//! Para evitar el click derecho en la pagina
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
