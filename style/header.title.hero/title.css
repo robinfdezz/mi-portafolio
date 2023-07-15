@@ -105,6 +105,8 @@
 .title_redes-sociales>a>img {
     width: 13px;
     padding-left: 5px;
+    filter: invert(30%);
+    -webkit-filter: invert(30%);
 }
 
 .title_cv {

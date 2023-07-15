@@ -21,14 +21,23 @@
     <link href="./style/contacto/contacto.css" rel="stylesheet" />
     <link href="./style/footer/footer.css" rel="stylesheet" />
     <link href="./style/inputs/inputs_errores.css" rel="stylesheet" />
+    <link href="./style/boton_nocturno/boton_nocturno.css" rel="stylesheet" />
+    <link href="./style/modo-nocturno.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="background_nocturno">
     <!--? Seccion del nacegacion -->
-    <section class="menu">
+    <div class="boton_nocturno">
+        <div class="contenedor_boton">
+            <div class="boton_imagen" id="boton_img"></div>
+            <div class="div_fondo"></div>
+        </div>
+    </div>
+    
+    <section class="menu background_nocturno">
         <header class="menu_header">
             <img src="./recursos/imagenes-iconos/programacion.png" class="menu_imagen">
-            <h3 class="menu_minombre">RobinDeveloper</h3>
+            <h3 class="menu_minombre color_nocturno">RobinDeveloper</h3>
         </header>
         <nav>
             <ul class="menu_lista">
@@ -38,27 +47,27 @@
                 <li class="menu_lista--opcion"><a class="menu-links" href="#formacion">Formacion</a></li>
                 <li class="menu_lista--opcion"><a class="menu-links" href="#experiencia">Proyectos</a></li>
             </ul>
-            <a class="menu-links menu-links--correo" href="#contacto">robinzon.m.g.f@gmail.com</a>
+            <a class="menu-links menu-links--correo color_nocturno" href="#contacto">robinzon.m.g.f@gmail.com</a>
         </nav>
     </section>
-
+    
     <!--? Sección del Header/Title/Hero -->
-    <section class="title">
+    <section class="title background_nocturno">
         <div class="title-div">
             <div class="contenedor-imagen"></div>
             <!-- <img src="./recursos/imagenes-iconos/Mi-foto-2.png" alt="Mi foto" class="title_img"> -->
             <div class="title-contenedor">
                 <div class="title_contenedor--yo">
-                    <h2 class="title_saludo">Hola, mi nombre es Robinzon M. Gabino F. y soy desarrollador web</h2>
-                    <h3 class="title_quien-soy">Actualmente estudiante de una Licenciatura en Informatica, cursada en la
+                    <h2 class="title_saludo color_nocturno">Hola, mi nombre es Robinzon M. Gabino F. y soy desarrollador web</h2>
+                    <h3 class="title_quien-soy color_nocturno">Actualmente estudiante de una Licenciatura en Informatica, cursada en la
                         Universidad Autonoma de Santo Domingo.</h3>
                 </div>
                 <ul class="title_redes">
-                    <li class="title_redes-sociales"><a href="https://github.com/robinfdezz" target="_blank">Github <img
+                    <li class="title_redes-sociales redes_sociales-nocturno"><a class="color_nocturno" href="https://github.com/robinfdezz" target="_blank">Github <img
                                 src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
-                    <li class="title_redes-sociales"><a href="https://www.linkedin.com/in/robinzondeveloper/"
+                    <li class="title_redes-sociales redes_sociales-nocturno"><a href="https://www.linkedin.com/in/robinzondeveloper/"
                             target="_blank">Linkedin <img src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
-                    <li class="title_redes-sociales"><a href="https://www.instagram.com/robinfdezz/"
+                    <li class="title_redes-sociales redes_sociales-nocturno"><a href="https://www.instagram.com/robinfdezz/"
                             target="_blank">Instagram <img src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
                 </ul>
 
@@ -85,8 +94,8 @@
     </section>
 
     <!--? Sección sobre mis skills -->
-    <section class="mis_skills" id="skills">
-        <h3 class="skills_titulo">Skills</h3>
+    <section class="mis_skills background_nocturno" id="skills">
+        <h3 class="skills_titulo color_nocturno">Skills</h3>
         <div class="skills_itemes">
             <div class="skills_item">
                 <ul class="skills_ul">
@@ -191,8 +200,8 @@
     </section>
 
     <!--? Sección sobre mis hobbies -->
-    <section class="mis_hobbies" id="hobbies">
-        <h3 class="hobbies_titulo">Hobbies</h3>
+    <section class="mis_hobbies background_nocturno" id="hobbies">
+        <h3 class="hobbies_titulo color_nocturno">Hobbies</h3>
         <div class="hobbies_itemes">
             <div class="hobbies_item">
                 <ul class="hobbies_ul">
@@ -262,16 +271,16 @@
     </section>
 
     <!--? Sección sobre mi experiencia laboral -->
-    <section class="experiencia" id="experiencia">
-        <h3 class="experiencia_titulo">Experiencia profesional</h3>
+    <section class="experiencia background_nocturno" id="experiencia">
+        <h3 class="experiencia_titulo color_nocturno">Experiencia profesional</h3>
         <div class="experiencia_contenedor">
             <div class="experiencia_item">
                 <div class="experienci_item-uno experienci_item-encriptador">
                     <img class="experiencia_img" src="./recursos/imagenes-iconos/encriptadortext.png">
                 </div>
                 <div class="experienci_item-dos">
-                    <h2 class="experiencia_titulo">Encriptador de texto</h2>
-                    <h3 class="experiencia_descripcion">Challenge Oracle</h3>
+                    <h2 class="experiencia_titulo color_nocturno">Encriptador de texto</h2>
+                    <h3 class="experiencia_descripcion color_nocturno">Challenge Oracle</h3>
                     <div class="experiencia_botones">
                         <a class="experiencia_boton-repositorio"
                             href="https://github.com/robinfdezz/Challenge-Alura.github.io"
@@ -338,22 +347,23 @@
     </section>
 
     <!--? Sección para el footer -->
-    <section class="footer" id="footer">
+    <section class="footer background_nocturno" id="footer">
         <div class="footer_contenedor">
             <ul class="title_redes footer_red">
-                <li class="title_redes-sociales footer_redes"><a href="https://github.com/robinfdezz"
+                <li class="title_redes-sociales footer_redes redes_sociales-nocturno"><a href="https://github.com/robinfdezz"
                         target="_blank">Github <img src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
-                <li class="title_redes-sociales footer_redes"><a href="https://www.linkedin.com/in/robinzondeveloper/"
+                <li class="title_redes-sociales footer_redes redes_sociales-nocturno"><a href="https://www.linkedin.com/in/robinzondeveloper/"
                         target="_blank">Linkedin <img src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
-                <li class="title_redes-sociales footer_redes"><a href="https://www.instagram.com/robinfdezz/"
+                <li class="title_redes-sociales footer_redes redes_sociales-nocturno"><a href="https://www.instagram.com/robinfdezz/"
                         target="_blank">Instagram <img src="./recursos/imagenes-iconos/flechas-arriba.png"></a></li>
             </ul>
             <div class="footer_firma">
-                <h2 class="footer_desarrollador"> &copy; Desarrollado por Robinzon M. G. F</h2>
-                <h3 class="footer_anho">2023</h3>
+                <h2 class="footer_desarrollador color_nocturno"> &copy; Desarrollado por Robinzon M. G. F</h2>
+                <h3 class="footer_anho color_nocturno">2023</h3>
             </div>
         </div>
     </section>
+    <script src="./js/boton-nocturno.js"></script>
     <script src="./js/script.js" type="module"></script>
 </body>
 

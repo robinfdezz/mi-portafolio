@@ -1,0 +1,72 @@
+.boton_nocturno {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    z-index: 50;
+
+}
+
+.contenedor_boton {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.div_fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A7AE4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: circleAnimation 3s infinite;
+    -webkit-animation: circleAnimation 3s infinite;
+}
+
+.boton_imagen {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url("../../recursos/imagenes-iconos/luna.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+@keyframes circleAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    40% {
+        transform: scale(1.7);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
