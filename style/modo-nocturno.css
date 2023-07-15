@@ -15,3 +15,7 @@
     -webkit-filter: invert(100%);
     width: 16px;
 }
+
+.cartas_nocturno--activo{
+    background-color: #757575;
+}

@@ -52,6 +52,12 @@
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    opacity: 0.7;
+
+}
+
+.boton_imagen:hover {
+    opacity: 1;
 }
 
 @keyframes circleAnimation {
