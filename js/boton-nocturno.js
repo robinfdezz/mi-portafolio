@@ -10,8 +10,7 @@ var claro = true;
 
 miBotonFlotante.addEventListener('click', function () {
     if (claro) {
-        miBotonFlotante.style.backgroundImage = "url('../recursos/imagenes-iconos/sol.png')";
-
+        miBotonFlotante.classList.add("boton_imagen-modonoche");
         urlNav.forEach(function (urlNav) {
             urlNav.classList.add("color_noche-links--nav");
         });
@@ -30,7 +29,7 @@ miBotonFlotante.addEventListener('click', function () {
 
         claro = false;
     } else {
-        miBotonFlotante.style.backgroundImage = "url('../recursos/imagenes-iconos/luna.png')";
+        miBotonFlotante.classList.remove("boton_imagen-modonoche");
 
         urlNav.forEach(function (urlNav) {
             urlNav.classList.remove("color_noche-links--nav");
