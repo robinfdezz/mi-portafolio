@@ -19,3 +19,7 @@
 .cartas_nocturno--activo{
     background-color: #757575;
 }
+
+.boton_imagen-modonoche {
+    background-image: url("../recursos/imagenes-iconos/sol.png");
+}
